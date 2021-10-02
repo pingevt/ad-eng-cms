@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ae_character
+    - ae_game
+id: game.field_player_chars
+field_name: field_player_chars
+entity_type: game
+type: entity_reference
+settings:
+  target_type: character
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

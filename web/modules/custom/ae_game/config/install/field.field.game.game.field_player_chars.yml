@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - ae_character.character_type.player_character
+    - field.storage.game.field_player_chars
+  module:
+    - ae_game
+id: game.game.field_player_chars
+field_name: field_player_chars
+entity_type: game
+bundle: game
+label: 'Player Characters'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:character'
+  handler_settings:
+    target_bundles:
+      player_character: player_character
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
