@@ -1,0 +1,11 @@
+character.type_add:
+  route_name: entity.character_type.add_form
+  title: 'Add character type'
+  appears_on:
+    - entity.character_type.collection
+
+character.add_page:
+  route_name: entity.character.add_page
+  title: 'Add character'
+  appears_on:
+    - entity.character.collection

@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a ae_game edit form.
+ *
+ * Two column template for the ae_game add/edit form.
+ *
+ * This template will be used when a ae_game edit form specifies 'ae_game_edit_form'
+ * as its #theme callback.  Otherwise, by default, ae_game add/edit forms will be
+ * themed by form.html.twig.
+ *
+ * Available variables:
+ * - form: The ae_game add/edit form.
+ *
+ * @see seven_form_ae_game_form_alter()
+ *
+ * @ingroup themeable
+ */
+#}
+THEME!!!
+<div class="layout-ae-game-form clearfix">
+  <div class="layout-region layout-region-ae-game-main">
+    {{ form|without('advanced', 'footer', 'actions') }}
+  </div>
+  <div class="layout-region layout-region-ae-game-secondary">
+    {{ form.advanced }}
+  </div>
+  <div class="layout-region layout-region-ae-game-footer">
+    <div class="layout-region-ae-game-footer__content">
+      {{ form.footer }}
+      {{ form.actions }}
+    </div>
+  </div>
+</div>

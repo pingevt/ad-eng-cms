@@ -1,0 +1,14 @@
+administer character types:
+  title: 'Administer character types'
+  description: 'Maintain the types of character entity.'
+  restrict access: true
+access character overview:
+  title: 'Access character overview page'
+delete character:
+  title: Delete character
+create character:
+  title: Create character
+view character:
+  title: View character
+edit character:
+  title: Edit character

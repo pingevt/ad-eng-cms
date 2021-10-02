@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Provides a game entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function ae_game_theme() {
+  return [
+    'game' => [
+      'render element' => 'elements',
+    ],
+    'ae_game_edit_form' => [
+      'render element' => 'form',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for game templates.
+ *
+ * Default template: game.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the game information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_game(array &$variables) {
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}

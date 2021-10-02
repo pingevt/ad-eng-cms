@@ -1,0 +1,26 @@
+entity.character.view:
+  title: View
+  route_name: entity.character.canonical
+  base_route: entity.character.canonical
+entity.character.edit_form:
+  title: Edit
+  route_name: entity.character.edit_form
+  base_route: entity.character.canonical
+entity.character.delete_form:
+  title: Delete
+  route_name: entity.character.delete_form
+  base_route: entity.character.canonical
+  weight: 10
+entity.character.collection:
+  title: Character
+  route_name: entity.character.collection
+  base_route: system.admin_content
+  weight: 10
+entity.character_type.edit_form:
+  title: Edit
+  route_name: entity.character_type.edit_form
+  base_route: entity.character_type.edit_form
+entity.character_type.collection:
+  title: List
+  route_name: entity.character_type.collection
+  base_route: entity.character_type.collection

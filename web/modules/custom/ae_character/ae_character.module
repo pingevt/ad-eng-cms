@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Provides a character entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function ae_character_theme() {
+  return [
+    'character' => [
+      'render element' => 'elements',
+    ],
+    'ae_character_edit_form' => [
+      'render element' => 'form',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for character templates.
+ *
+ * Default template: character.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the character information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_character(array &$variables) {
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}

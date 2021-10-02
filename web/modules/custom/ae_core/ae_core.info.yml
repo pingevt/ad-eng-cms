@@ -1,0 +1,9 @@
+name: Adventure Engine Core
+type: module
+description: Adventure Engine Core Module
+package: ae
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - ae_game:ae_game
+  - ae_character:ae_character

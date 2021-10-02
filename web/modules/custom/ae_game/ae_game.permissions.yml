@@ -1,0 +1,13 @@
+administer game:
+  title: 'Administer game settings'
+  restrict access: true
+access game overview:
+  title: 'Access game overview page'
+delete game:
+  title: Delete game
+create game:
+  title: Create game
+view game:
+  title: View game
+edit game:
+  title: Edit game

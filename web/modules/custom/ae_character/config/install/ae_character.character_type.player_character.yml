@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ae_character
+id: player_character
+label: Character
