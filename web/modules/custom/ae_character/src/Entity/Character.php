@@ -356,4 +356,21 @@ class Character extends RevisionableContentEntityBase implements CharacterInterf
     return $fields;
   }
 
+  /**
+   * Get the base Stats of the character.
+   *
+   * @return array
+   *   Array of base ststa.
+   */
+  public function getBaseStats() {
+    return [
+      'str' => (int) $this->str->value,
+      'dex' => (int) $this->dex->value,
+      'con' => (int) $this->con->value,
+      'int' => (int) $this->int->value,
+      'wis' => (int) $this->wis->value,
+      'cha' => (int) $this->cha->value,
+    ];
+  }
+
 }

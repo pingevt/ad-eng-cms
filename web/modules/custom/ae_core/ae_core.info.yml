@@ -1,7 +1,7 @@
 name: Adventure Engine Core
 type: module
 description: Adventure Engine Core Module
-package: ae
+package: Adventure Engine
 core: 8.x
 core_version_requirement: ^8 || ^9
 dependencies:
