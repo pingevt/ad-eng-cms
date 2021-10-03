@@ -1,0 +1,45 @@
+ae_api.games:
+  path: '/api/games'
+  methods: [GET, HEAD]
+  defaults:
+    _controller: '\Drupal\ae_api\Controller\ApiControllerGame:getResourceList'
+  requirements:
+    _permission: 'use api'
+  # options:
+  #   _auth: [ 'key_auth' ]
+
+ae_api.games_detail:
+  path: '/api/games/{nid}'
+  methods: [GET, HEAD]
+  defaults:
+    _controller: '\Drupal\ae_api\Controller\ApiControllerGame:getResource'
+  requirements:
+    _permission: 'use api'
+  options:
+    # _auth: [ 'key_auth' ]
+    parameters:
+      nid:
+        type: entity:node
+
+ae_api.characters:
+  path: '/api/characters'
+  methods: [GET, HEAD]
+  defaults:
+    _controller: '\Drupal\ae_api\Controller\ApiControllerCharacter:getResourceList'
+  requirements:
+    _permission: 'use api'
+  # options:
+  #   _auth: [ 'key_auth' ]
+
+ae_api.characters_detail:
+  path: '/api/characters/{nid}'
+  methods: [GET, HEAD]
+  defaults:
+    _controller: '\Drupal\ae_api\Controller\ApiControllerCharacter:getResource'
+  requirements:
+    _permission: 'use api'
+  options:
+    # _auth: [ 'key_auth' ]
+    parameters:
+      nid:
+        type: entity:node
