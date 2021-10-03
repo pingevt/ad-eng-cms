@@ -3,3 +3,8 @@ entity.character_type.collection:
   parent: system.admin_structure
   description: 'Manage and CRUD actions on Character type.'
   route_name: entity.character_type.collection
+entity.character.collection:
+  title: Character
+  description: List of Character
+  route_name: entity.character.collection
+  parent: system.admin_content

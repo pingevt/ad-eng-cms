@@ -9,7 +9,7 @@ ae_api.games:
   #   _auth: [ 'key_auth' ]
 
 ae_api.games_detail:
-  path: '/api/games/{nid}'
+  path: '/api/games/{id}'
   methods: [GET, HEAD]
   defaults:
     _controller: '\Drupal\ae_api\Controller\ApiControllerGame:getResource'
@@ -18,8 +18,8 @@ ae_api.games_detail:
   options:
     # _auth: [ 'key_auth' ]
     parameters:
-      nid:
-        type: entity:node
+      id:
+        type: entity:game
 
 ae_api.characters:
   path: '/api/characters'
@@ -32,7 +32,7 @@ ae_api.characters:
   #   _auth: [ 'key_auth' ]
 
 ae_api.characters_detail:
-  path: '/api/characters/{nid}'
+  path: '/api/characters/{id}'
   methods: [GET, HEAD]
   defaults:
     _controller: '\Drupal\ae_api\Controller\ApiControllerCharacter:getResource'
@@ -41,5 +41,5 @@ ae_api.characters_detail:
   options:
     # _auth: [ 'key_auth' ]
     parameters:
-      nid:
-        type: entity:node
+      id:
+        type: entity:character

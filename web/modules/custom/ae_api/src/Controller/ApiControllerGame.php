@@ -63,6 +63,13 @@ class ApiControllerGame extends ApiControllerBase {
 
     $this->privateParams['status'] = 1;
 
+    $parameters = $this->currentRoute->getParameters()->all();
+
+    if (isset($parameters['id'])) {
+      $this->privateParams['id'] = $parameters['id']->id();
+      $this->resource = $parameters['id'];
+    }
+
     // Here we also want to handle any bad param errors...
   }
 
