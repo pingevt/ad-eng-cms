@@ -53,6 +53,7 @@ packages:
     drupal/drupal-extension: v4.1.0
     drupal/key_auth: 1.1.0
     drupal/pathauto: 1.8.0
+    drupal/pluginreference: 3.0.0-beta1
     drupal/queue_ui: 2.2.0
     drupal/token: 1.9.0
     drupal/ultimate_cron: 2.0.0-alpha5

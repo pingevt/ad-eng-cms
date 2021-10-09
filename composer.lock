@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dd9235fc83ac588cd033ef8f815fd04",
+    "content-hash": "a193b8e8e8278b636ce5b7cc60e896a7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2993,6 +2993,57 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/pluginreference",
+            "version": "3.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pluginreference.git",
+                "reference": "3.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pluginreference-3.0.0-beta1.zip",
+                "reference": "3.0.0-beta1",
+                "shasum": "f94a724002a0f242bf166363c121596119694c96"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-beta1",
+                    "datestamp": "1632923607",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pablo López",
+                    "homepage": "https://www.drupal.org/u/plopesc",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                }
+            ],
+            "description": "Provides a field that stores a soft reference to a plugin.",
+            "homepage": "https://www.drupal.org/project/pluginreference",
+            "support": {
+                "source": "http://git.drupal.org/project/pluginreference.git",
+                "issues": "https://www.drupal.org/project/issues/pluginreference",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -11829,6 +11880,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/pluginreference": 10,
         "drupal/ultimate_cron": 15
     },
     "prefer-stable": true,
