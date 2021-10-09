@@ -80,6 +80,7 @@ class CharacterListBuilder extends EntityListBuilder {
   public function buildHeader() {
     $header['id'] = $this->t('ID');
     $header['title'] = $this->t('Title');
+    $header['type'] = $this->t('Type');
     $header['status'] = $this->t('Status');
     $header['uid'] = $this->t('Author');
     $header['created'] = $this->t('Created');
@@ -94,6 +95,7 @@ class CharacterListBuilder extends EntityListBuilder {
     /* @var $entity \Drupal\ae_character\CharacterInterface */
     $row['id'] = $entity->id();
     $row['title'] = $entity->toLink();
+    $row['type'] = $entity->bundle->entity->label();
     $row['status'] = $entity->isEnabled() ? $this->t('Enabled') : $this->t('Disabled');
     $row['uid']['data'] = [
       '#theme' => 'username',
