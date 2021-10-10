@@ -15,9 +15,6 @@ function ae_character_theme() {
     'character' => [
       'render element' => 'elements',
     ],
-    'ae_character_edit_form' => [
-      'render element' => 'form',
-    ],
   ];
 }
 

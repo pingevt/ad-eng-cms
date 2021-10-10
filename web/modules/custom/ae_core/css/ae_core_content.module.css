@@ -17,40 +17,40 @@
   screen and (min-width: 780px),
   (orientation: landscape) and (min-device-height: 780px) {
 
-  .layout-region-ae-game-main,
-  .layout-region-ae-game-footer {
+  .layout-region-ae-core-main,
+  .layout-region-ae-core-footer {
     float: left; /* LTR */
     box-sizing: border-box;
     width: 65%;
     padding-right: 2em; /* LTR */
   }
 
-  [dir="rtl"] .layout-region-ae-game-main,
-  [dir="rtl"] .layout-region-ae-game-footer {
+  [dir="rtl"] .layout-region-ae-core-main,
+  [dir="rtl"] .layout-region-ae-core-footer {
     float: right;
     padding-right: 0;
     padding-left: 2em;
   }
 
-  .layout-region-ae-game-secondary {
+  .layout-region-ae-core-secondary {
     float: right; /* LTR */
     width: 35%;
   }
 
-  [dir="rtl"] .layout-region-ae-game-secondary {
+  [dir="rtl"] .layout-region-ae-core-secondary {
     float: left;
   }
 
   /* @todo File an issue to add a standard class to all text-like inputs */
-  .layout-region-ae-game-secondary .form-autocomplete,
-  .layout-region-ae-game-secondary .form-text,
-  .layout-region-ae-game-secondary .form-tel,
-  .layout-region-ae-game-secondary .form-email,
-  .layout-region-ae-game-secondary .form-url,
-  .layout-region-ae-game-secondary .form-search,
-  .layout-region-ae-game-secondary .form-number,
-  .layout-region-ae-game-secondary .form-color,
-  .layout-region-ae-game-secondary textarea {
+  .layout-region-ae-core-secondary .form-autocomplete,
+  .layout-region-ae-core-secondary .form-text,
+  .layout-region-ae-core-secondary .form-tel,
+  .layout-region-ae-core-secondary .form-email,
+  .layout-region-ae-core-secondary .form-url,
+  .layout-region-ae-core-secondary .form-search,
+  .layout-region-ae-core-secondary .form-number,
+  .layout-region-ae-core-secondary .form-color,
+  .layout-region-ae-core-secondary textarea {
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
@@ -66,9 +66,9 @@
 @media
   screen and (max-width: 1020px) {
 
-  .toolbar-vertical.toolbar-tray-open .layout-region-ae-game-main,
-  .toolbar-vertical.toolbar-tray-open .layout-region-ae-game-footer,
-  .toolbar-vertical.toolbar-tray-open .layout-region-ae-game-secondary {
+  .toolbar-vertical.toolbar-tray-open .layout-region-ae-core-main,
+  .toolbar-vertical.toolbar-tray-open .layout-region-ae-core-footer,
+  .toolbar-vertical.toolbar-tray-open .layout-region-ae-core-secondary {
     float: none;
     width: auto;
     padding-right: 0;

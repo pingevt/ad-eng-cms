@@ -15,9 +15,6 @@ function ae_game_theme() {
     'game' => [
       'render element' => 'elements',
     ],
-    'ae_game_edit_form' => [
-      'render element' => 'form',
-    ],
   ];
 }
 
