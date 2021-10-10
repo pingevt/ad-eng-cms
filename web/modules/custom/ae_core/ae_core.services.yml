@@ -5,3 +5,15 @@ services:
   plugin.manager.ae_weapon:
     class: Drupal\ae_core\Plugin\AeWeaponPluginManager
     parent: default_plugin_manager
+  plugin.manager.ae_armor:
+    class: Drupal\ae_core\Plugin\AeArmorPluginManager
+    parent: default_plugin_manager
+  plugin.manager.ae_tool:
+    class: Drupal\ae_core\Plugin\AeToolPluginManager
+    parent: default_plugin_manager
+  plugin.manager.ae_dmg_type:
+    class: Drupal\ae_core\Plugin\AeDmgTypePluginManager
+    parent: default_plugin_manager
+  plugin.manager.ae_skill:
+    class: Drupal\ae_core\Plugin\AeSkillPluginManager
+    parent: default_plugin_manager
